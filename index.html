@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+	<main class="container">
+		<!-- Navigation -->
+		<nav class="nav">
+			<img src="assets/images/logo.svg" alt="logo" class="logo">
+			<img src="assets/images/icon-menu.svg" alt="" class="menu-icon" id="menuIcon">
+			<ul class="nav-links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">New</a></li>
+				<li><a href="#">Popular</a></li>
+				<li><a href="#">Trending</a></li>
+				<li><a href="#">Categories</a></li>
+			</ul>
+		</nav>
+
+		<!-- Image -->
+		<div class="image">
+			<picture>
+				<source media="(max-width: 43.125em)" srcset="./assets/images/image-web-3-mobile.jpg">
+				<img src="./assets/images/image-web-3-desktop.jpg" alt="image web-3 desktop">
+			</picture>
+		</div>
+
+		<!-- Showcase Title -->
+		<h1 class="showcase-title">The Bright Future of Web 3.0?</h1>
+
+		<!-- Showcase Intro -->
+		<div class="showcase-intro">
+			<p>
+				We dive into the next evolution of the web that claims to put the
+				power of the platforms back into the hands of the people.
+				But is it really fulfilling its promise?
+			</p>
+			<button type="button">Read More</button>
+		</div>
+
+		<!-- Featured -->
+		<section class="featured">
+			<h2>New</h2>
+			<ul>
+				<li>
+					<p class="featured__heading"><a href="#">Hydrogen VS Electric Cars</a></p>
+					<p class="featured__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+				</li>
+				<li>
+					<p class="featured__heading"><a href="#">The Downsides of AI Artistry</a></p>
+					<p class="featured__description">What are the possible adverse effects of on-demand AI image generation?</p>
+				</li>
+				<li>
+					<p class="featured__heading"><a href="#">Is VC Funding Drying Up?</a></p>
+					<p class="featured__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Articles -->
+		<article class="news__article" id="article1">
+			<h2 class="sr-only">Visually Hidden</h2>
+			<img src="assets/images/image-retro-pcs.jpg" alt="">
+
+			<div class="news__article__con">
+				<p class="news__article__num">01</p>
+				<p class="news__article__heading"><a href="#">Reviving Retro PCs</a></p>
+				<p class="news__article__description">What happens when old PCs are given modern upgrades?</p>
+			</div>
+		</article>
+
+		<article class="news__article" id="article2">
+			<h2 class="sr-only">Visually Hidden</h2>
+			<img src="assets/images/image-top-laptops.jpg" alt="">
+
+			<div class="news__article__con">
+				<p class="news__article__num">02</p>
+				<p class="news__article__heading"><a href="#">Top 10 Laptops of 2022</a></p>
+				<p class="news__article__description">Our best picks for various needs and budgets.</p>
+			</div>
+		</article>
+
+		<article class="news__article" id="article3">
+			<h2 class="sr-only">Visually Hidden</h2>
+			<img src="assets/images/image-gaming-growth.jpg" alt="">
+
+			<div class="news__article__con">
+				<p class="news__article__num">03</p>
+				<p class="news__article__heading"><a href="#">The Growth of Gaming</a></p>
+				<p class="news__article__description">How the pandemic has sparked fresh opportunities.</p>
+			</div>
+		</article>
+	</main>
+
+	<footer class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="https://github.com/fortune-i-o/" target="_blank">fortune-i-o</a>
+	</footer>
+
+	<script src="js/menu.js"></script>
+</body>
+
+</html>
