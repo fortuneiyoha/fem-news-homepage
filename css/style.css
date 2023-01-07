@@ -223,22 +223,6 @@ picture {
   line-height: 1.7;
 }
 
-/****** Attribution ******/
-.attribution {
-  font-size: clamp(0.7rem, calc(1vw + 0.67rem), 0.9375rem);
-  margin: 2rem auto 1.2rem;
-  text-align: center;
-  width: 80%;
-}
-
-.attribution a {
-  color: var(--soft-red);
-  font-weight: 700;
-}
-
-.attribution a:hover {
-  text-decoration: underline;
-}
 
 /****** Layout ******/
 .container {
