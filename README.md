@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [frontendmentor.io/solutions/news-homepage-huI9q5FqBJ](https://www.frontendmentor.io/solutions/news-homepage-huI9q5FqBJ)
+- Live Site URL: [fem-news-homepage.pages.dev](https://fem-news-homepage.pages.dev/)
 
 ## My process
 
