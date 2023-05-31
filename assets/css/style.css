@@ -35,7 +35,7 @@ picture {
 }
 
 a:focus-visible,
-.menu-icon:focus-visible {
+.navbar-toggler:focus-visible {
   outline: 2px dotted var(--clr-accent-900);
 }
 
@@ -91,7 +91,7 @@ a:focus-visible,
   width: 100%;
 }
 
-.menu-icon {
+.navbar-toggler {
   display: none;
   z-index: 10;
 }
@@ -311,7 +311,7 @@ a:focus-visible,
     width: 3rem;
   }
 
-  .menu-icon {
+  .navbar-toggler {
     display: block;
     background: none;
     border: none;
@@ -321,7 +321,7 @@ a:focus-visible,
     overflow: visible;
   }
 
-  .menu-icon img {
+  .navbar-toggler img {
     display: block;
     height: 100%;
     width: 100%;
