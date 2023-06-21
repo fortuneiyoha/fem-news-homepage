@@ -1,6 +1,6 @@
 :root {
-  --clr-accent-700: hsl(35, 77%, 62%);
-  --clr-accent-900: hsl(5, 85%, 63%);
+  --clr-accent-1: hsl(35, 77%, 62%);
+  --clr-accent-2: hsl(5, 85%, 63%);
   --clr-neutral-200: hsl(36, 100%, 99%);
   --clr-neutral-300: hsl(233, 8%, 79%);
   --clr-neutral-400: hsl(236, 13%, 42%);
@@ -11,7 +11,18 @@
 
 @font-face {
   font-family: "Inter";
-  src: url(../fonts/Inter.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Inter-Regular.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Inter-ExtraBold.woff) format(woff);
 }
 
 *,
@@ -27,7 +38,6 @@ body {
   background-color: var(--clr-neutral-200);
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  width: 100%;
 }
 
 picture {
@@ -36,7 +46,7 @@ picture {
 
 a:focus-visible,
 .navbar-toggler:focus-visible {
-  outline: 2px dotted var(--clr-accent-900);
+  outline: 2px dotted var(--clr-accent-2);
 }
 
 .sr-only {
@@ -111,7 +121,7 @@ a:focus-visible,
 }
 
 .nav__links a:is(:hover, :focus-visible) {
-  color: var(--clr-accent-900);
+  color: var(--clr-accent-2);
 }
 
 /* || Image */
@@ -139,7 +149,7 @@ a:focus-visible,
 }
 
 .showcase__intro .btn {
-  background-color: var(--clr-accent-900);
+  background-color: var(--clr-accent-2);
   color: var(--clr-neutral-200);
   font-size: 0.85rem;
   letter-spacing: 0.24rem;
@@ -168,7 +178,6 @@ a:focus-visible,
 
 .featured ul {
   flex-direction: column;
-  height: 100%;
   justify-content: space-evenly;
   list-style: none;
 }
@@ -185,7 +194,7 @@ a:focus-visible,
 }
 
 .featured h2 {
-  color: var(--clr-accent-700);
+  color: var(--clr-accent-1);
   font-size: clamp(2rem, calc(1.5rem + 2.6vw), 2.6rem);
 }
 
@@ -199,7 +208,7 @@ a:focus-visible,
 }
 
 .featured__heading a:is(:hover, :focus-visible) {
-  color: var(--clr-accent-700);
+  color: var(--clr-accent-1);
 }
 
 .featured__description {
@@ -234,7 +243,7 @@ a:focus-visible,
 }
 
 .news__article-heading a:is(:hover, :focus-visible) {
-  color: var(--clr-accent-900);
+  color: var(--clr-accent-2);
 }
 
 .news__article-description {
@@ -351,10 +360,7 @@ a:focus-visible,
   }
 
   .nav__links.open::after {
-    background-color: var(--clr-neutral-900);
-    -moz-backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    background-color: hsla(0, 0%, 24%, 0.5);
     content: "";
     display: block;
     left: -100%;
@@ -363,6 +369,15 @@ a:focus-visible,
     top: 0;
     width: 100%;
     z-index: -1;
+  }
+
+  @supports (-moz-appearance: none) or (-webkit-backdrop-filter: none) or
+    (backdrop-filter: none) {
+    .nav__links.open::after {
+      -moz-backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+    }
   }
 
   .showcase__title {
@@ -407,7 +422,6 @@ a:focus-visible,
 
   .featured ul {
     flex-direction: row;
-    width: 100%;
   }
 
   .featured li {
